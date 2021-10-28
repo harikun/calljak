@@ -21,7 +21,7 @@
 
 ---
 
-### Info Lebih Lengkap
+### Give Donation
 
 - Karyakarsa: [Ciptosuhari](https://karyakarsa.com/ciptosuhari)
-- Instagram : [Ciptosuhari](https://www.instagram.com/ciptosuhari)
+- Saweria : [Ciptosuhari](https://saweria.co/harikun)
