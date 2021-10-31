@@ -1,8 +1,17 @@
-let number = /^[0-9]+$/
+document.querySelector('form').onkeydown = function (evt) {
+    if (evt.which === 13) {
+        evt.preventDefault();
+        evt.stopPropagation();
+        calculateTax()
+    }
+};
+
 
 function calculateTax() {
 
     let incomeYear = document.getElementById('incomeYear').value
+     console.log(incomeYear)
+
     const incomeTax =  document.getElementById('tax');
     const alert = document.getElementsByClassName('alert')
 
@@ -78,7 +87,7 @@ function calculateTax() {
          <p class="text-end">5% x Rp60.000.000= Rp${tax60.toLocaleString('id')}</p>
          <p class="text-end">15% x Rp190.000.000 = Rp${tax60to250.toLocaleString('id')}</p>
          <p class="text-end">25% x Rp250.000.000 = Rp${tax250to500.toLocaleString('id')}</p>
-         <p class="text-end">30% x Rp4.750.000.000 = Rp${tax500to5M.toLocaleString('id')}</p>
+         <p class="text-end">30% x Rp${income500to5M.toLocaleString('id')}= Rp${tax500to5M.toLocaleString('id')}</p>
          <b class="text-end"> Total = Rp${total.toLocaleString('id')} </b>
          `;
     // > 5 M
